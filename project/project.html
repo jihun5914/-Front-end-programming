@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>국밥 키오스크</title>
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <h1>국밥 주문 키오스크</h1>
+  <div class="container">
+    <!-- 메뉴 영역 -->
+    <div id="menu" class="menu-section">
+      <h2>메뉴</h2>
+      <div class="menu-list">
+        <div class="menu-item" data-name="콩나물국밥" data-price="8000">
+          <img src="./콩나물국밥.jpg" alt="콩나물국밥">
+          <p>콩나물국밥 - 8,000원</p>
+        </div>
+        <div class="menu-item" data-name="순대국밥" data-price="9000">
+          <img src="./순대국밥.jpg" alt="순대국밥">
+          <p>순대국밥 - 9,000원</p>
+        </div>
+        <div class="menu-item" data-name="돼지국밥" data-price="8500">
+          <img src="./돼지국밥.jpg" alt="돼지국밥">
+          <p>돼지국밥 - 8,500원</p>
+        </div>
+        <div class="menu-item" data-name="내장국밥" data-price="8500">
+          <img src="./내장국밥.jpg" alt="내장국밥">
+          <p>내장국밥 - 8,500원</p>
+        </div>
+        <div class="menu-item" data-name="섞어국밥" data-price="8500">
+          <img src="./섞어국밥.jpg" alt="섞어국밥">
+          <p>섞어국밥 - 8,500원</p>
+        </div>
+      </div>
+      <div id="admin-tools">
+        <button id="add-menu">메뉴 추가</button>
+        <button id="delete-menu">메뉴 삭제</button>
+      </div>
+    </div>
+
+    <!-- 장바구니 영역 -->
+    <div id="cart" class="cart-section">
+      <h2>장바구니</h2>
+      <div id="cart-items"></div>
+      <div id="total">
+        <p>총액: <span id="total-price">0</span>원</p>
+      </div>
+      <button id="checkout">결제</button>
+    </div>
+
+    <!-- 판매 내역 -->
+    <div id="sales-history" class="sales-section">
+      <h2>판매 내역</h2>
+      <div id="history"></div>
+      <button id="reset-history">판매 내역 초기화</button>
+    </div>
+  </div>
+
+  <script src="project.js"></script>
+</body>
+</html>
+<!--구서동 오시면 진가원이라는 국밥집 추천합니다-->
